@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  height: 120vh;
+}
+.header-div{
+  width: 100%;
+  height: 500px;
+  background-color: beige;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  /* display: inline-block; */
+}
+.container{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.typeWrite{
+
+  overflow: hidden;
+  border-right: .10em solid orange;
+  font-size: 1.2rem;
+
+  animation: typing 1s forwards; 
+}
+
+.form-container {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+.form--input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.form--submit {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #639;
+  border: none;   
+  cursor: pointer; 
+}
+.card-div{
+  /* position: relative;
+  top: 20px;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.card{
+  
+  display: flex;
+  padding: 15px;
+  /* justify-content:start; */
+  align-items:start;
+  flex-direction:row;
+  height: 400px;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prj{
+  display: flex;
+  align-items:start;
+  flex-direction:column;
+  padding: 10px;
+  width: 250px;
+  height: 200px;
+  margin-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prjh2{
+  margin-top: 40px;
+}
+.prjh2-div{
+  display: flex;
+  
+  justify-content:center;
+  align-items:center;
+
+}
+.prj-div{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:flex-start;
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  
+}
+.projects{
+  margin: 0;
+  padding: 0;
+}
+.cool{
+  height: 100px;
+}
+.infomation, .aboutMe {
+  width: 50%;
+  /* padding: 25px; */
+  padding: 10px;
+  padding-top: 0px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+/* .infomation{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  
+  
+  width: 50%;
+} */
+/* .aboutMe{
+  align-items: center;
+  width: 50%;
+} */
+/* .name{
+  position: relative;
+  left: 200px;
+  bottom: 200px;
+} */
+.name {
+  text-align: left; 
+  padding: 0;/* Align the text on the right side */
+}
+@media (max-width: 768px) {
+  .infomation, .aboutMe {
+    width: 100%; 
+ 
+   
+  }
+  .card {
+    width: 95%; /* Make card width flexible */
+  }
+  .prj{
+    width: 20%;
+  }
+  .pic{
+    right: 0;
+  }
+  .name {
+    top: 0;
+    left: 0; /* Remove hard positioning on smaller screens */
+  }
+}
+/* .infomation{
+
+} */
+
+.pic{
+
+  height: 200px;
+  width: 270px;
+  background-color: #639;
+}
+p{
+  margin-bottom: 15px;
+  margin-left: 15px;
+  font-size: 25px;
+}
