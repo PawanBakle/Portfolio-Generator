@@ -10,12 +10,11 @@ const Project = (props) =>{
 <div className="prj">
            
         <h2>{props.item.projectName}</h2>
-        <br />
-        <br />
-        <div>
+   
+       
         <i>{props.item.desc} </i>
-        <button onClick={props.deleteProject}>Delete Project</button>
-        </div>
+        {/* <button className = 'form--submit' onClick={props.deleteProject}>Delete Project</button> */}
+        
     
         </div>
 </div>

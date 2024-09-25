@@ -13,16 +13,16 @@ const Card = () =>{
     const [prName, setPrName] = useState(initialPrName || []);
 
     // Function to delete a project
-    const deleteProject = (indexToDelete) => {
-        setPrName(prevPrName => prevPrName.filter((_, index) => index !== indexToDelete));
-    };
+    // const deleteProject = (indexToDelete) => {
+    //     setPrName(prevPrName => prevPrName.filter((_, index) => index !== indexToDelete));
+    // };
     // const { edu } = location.state || {};
     const deg = edu ? (edu.map((item,index)=>(
     
 
     <div key={index}>
-        <h2>{item.degree}</h2>
-    <p >{item.collg}  </p>
+        <h2 >{item.degree}</h2>
+    <p>{item.collg}  </p>
     </div>
    
    ))
@@ -36,7 +36,7 @@ const Card = () =>{
                    key={index}
                    index={index}
                    item={item}
-                   deleteProject={() => deleteProject(index)} // Pass the delete function
+                //    deleteProject={() => deleteProject(index)} // Pass the delete function
     />
 
        
@@ -81,10 +81,16 @@ const Card = () =>{
                 </div>
             </div> 
         </div>
-        <div className='cool'>
+        
+        <div className="card-div">
+        <div className='card'>
         <h2>Degrees:</h2>
             {deg}
         </div>
+        </div>
+      
+        
+       
        
 
            
